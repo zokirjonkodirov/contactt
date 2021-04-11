@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".heading"
+    android:background="@drawable/secondary_gradient">
+
+    <ImageView
+        android:id="@+id/emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/createdBy"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_baseline_emoji_emotions_24"/>
+
+    <TextView
+        android:id="@+id/createdBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/viga"
+        android:text="Creators"
+        android:textColor="#F0F0F0"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/creatorsSadulla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createdBy"
+        android:layout_centerInParent="true"
+        android:text="Sadulla"
+        android:textSize="50sp"
+        android:textColor="#D4D51A"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/creatorsZokir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creatorsSadulla"
+        android:layout_centerInParent="true"
+        android:text="Zokirjon"
+        android:textSize="50sp"
+        android:textColor="#D4D51A"
+        android:clickable="true"/>
+
+</RelativeLayout>

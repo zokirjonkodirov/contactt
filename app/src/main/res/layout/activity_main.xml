@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@drawable/main_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/viga"
+        android:gravity="center"
+        android:text="Call me"
+        android:textSize="35sp"
+        android:textColor="#1EFFFF"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/sadulla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:text="Sadulla"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:clickable="true"
+        android:background="@drawable/borders"/>
+
+    <TextView
+        android:id="@+id/tursunboy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sadulla"
+        android:layout_marginTop="15dp"
+        android:text="Tursunboy"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:clickable="true"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:background="@drawable/borders"/>
+
+    <TextView
+        android:id="@+id/bosit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tursunboy"
+        android:layout_marginTop="15dp"
+        android:text="Bosit"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:clickable="true"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:background="@drawable/borders"/>
+
+    <TextView
+        android:id="@+id/Kamoliddin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bosit"
+        android:layout_marginTop="15dp"
+        android:text="Kamoliddin"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:clickable="true"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:background="@drawable/borders"/>
+
+    <TextView
+        android:id="@+id/abdurashid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Kamoliddin"
+        android:layout_marginTop="15dp"
+        android:text="Abdurashid"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:clickable="true"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:background="@drawable/borders"/>
+
+    <TextView
+        android:id="@+id/allo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abdurashid"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:clickable="true"
+        android:text="Aloka"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:background="@drawable/borders"/>
+
+    <TextView
+        android:id="@+id/zokir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allo"
+        android:layout_marginTop="15dp"
+        android:text="Zokirjon"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:clickable="true"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:background="@drawable/borders"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="number"
+        android:ems="20"
+        android:inputType="phone"
+        android:layout_below="@id/zokir"
+        android:layout_marginTop="25dp"
+        android:paddingStart="12dp"
+        android:padding="10dp"
+        android:textColor="#43DDE6"
+        android:textColorHint="#F0F0F0"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/custom_number"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"/>
+
+    <ImageView
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_local_phone_24"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/permissionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_check_circle_24"
+            android:clickable="true"
+            android:onClick="getPermission"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/permissionBtn"
+            android:text="Get permission"
+            android:layout_centerInParent="true"
+            android:textColor="#F0F0F0"
+            android:clickable="true"
+            android:onClick="getPermission"/>
+
+    </RelativeLayout>
+</RelativeLayout>
