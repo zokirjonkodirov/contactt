@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/createdBy"
         android:layout_centerInParent="true"
-        android:text="Sadulla"
+        android:text="Zokirjon"
         android:textSize="50sp"
         android:textColor="#D4D51A"
         android:clickable="true"/>
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/creatorsSadulla"
         android:layout_centerInParent="true"
-        android:text="Zokirjon"
+        android:text="Sadulla"
         android:textSize="50sp"
         android:textColor="#D4D51A"
         android:clickable="true"/>
